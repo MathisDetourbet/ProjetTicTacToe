@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		671B262B18A5730200AA4358 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 671B262A18A5730200AA4358 /* main.cpp */; };
 		671B262D18A5730200AA4358 /* TicTacToeProject.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 671B262C18A5730200AA4358 /* TicTacToeProject.1 */; };
+		67C1CD9718A57869003C71AA /* Pion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67C1CD9518A57869003C71AA /* Pion.cpp */; };
+		67C1CD9A18A57CD6003C71AA /* Plateau.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67C1CD9818A57CD6003C71AA /* Plateau.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		671B262718A5730200AA4358 /* TicTacToeProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TicTacToeProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		671B262A18A5730200AA4358 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		671B262C18A5730200AA4358 /* TicTacToeProject.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TicTacToeProject.1; sourceTree = "<group>"; };
+		67C1CD9518A57869003C71AA /* Pion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pion.cpp; sourceTree = "<group>"; };
+		67C1CD9618A57869003C71AA /* Pion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pion.h; sourceTree = "<group>"; };
+		67C1CD9818A57CD6003C71AA /* Plateau.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Plateau.cpp; path = ../Plateau.cpp; sourceTree = "<group>"; };
+		67C1CD9918A57CD6003C71AA /* Plateau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plateau.h; path = ../Plateau.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				671B262A18A5730200AA4358 /* main.cpp */,
+				67C1CD9518A57869003C71AA /* Pion.cpp */,
+				67C1CD9618A57869003C71AA /* Pion.h */,
+				67C1CD9818A57CD6003C71AA /* Plateau.cpp */,
+				67C1CD9918A57CD6003C71AA /* Plateau.h */,
 				671B262C18A5730200AA4358 /* TicTacToeProject.1 */,
 			);
 			path = TicTacToeProject;
@@ -118,6 +128,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				671B262B18A5730200AA4358 /* main.cpp in Sources */,
+				67C1CD9A18A57CD6003C71AA /* Plateau.cpp in Sources */,
+				67C1CD9718A57869003C71AA /* Pion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +237,7 @@
 				671B263218A5730200AA4358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
