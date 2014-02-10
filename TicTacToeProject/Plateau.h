@@ -19,7 +19,7 @@ class Plateau {
     
     int lignes, colonnes;
     
-    std::vector < std::vector < int > > grid;
+    std::vector< std::vector <int> > grid;
     public:
     
     Plateau(int, int);

@@ -11,8 +11,13 @@
 
 using namespace std;
 
-Pion::Pion(bool _type) {
-    type = _type;
+//Pion::Pion(bool _type) {
+//    type = _type;
+//}
+
+Pion::Pion(PION _pion)
+{
+    pion = _pion;
 }
 
 Pion::~Pion() {

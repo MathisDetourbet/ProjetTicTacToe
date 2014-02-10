@@ -13,14 +13,22 @@
 
 #endif /* defined(__TicTacToeProject__Pion__) */
 
+// Plut?t que de cr?er un bool?en, pourquoi ne pas faire une ?num ?
+typedef enum {
+    X,
+    O
+}PION; // L'avantage c'est que ce sera plus lisible dans le code
+
 class Pion {
     private:
     
-    bool type;
+//    bool type;
+    PION pion;
     
     public:
     
-    Pion(bool);
+//    Pion(bool);
+    Pion(PION _pion);
     ~Pion();
     
 };
