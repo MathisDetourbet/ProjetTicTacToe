@@ -11,16 +11,26 @@
 
 #include <iostream>
 
-#endif /* defined(__TicTacToeProject__Pion__) */
+// Plateau composé de pions : VIDE = 0, CROIX = 1 ou ROND = 2
+typedef enum {
+    VIDE = 0,
+    CROIX = 1,  // Machine = X
+    ROND = 2    // Humain = O
+}PionType;
+
+/*typedef enum {
+    X,
+    O
+}PION;*/
 
 class Pion {
     private:
-    
-    bool type;
+    PionType type;
     
     public:
-    
-    Pion(bool);
+    Pion(int);
     ~Pion();
-    
+    PionType getType() const;
 };
+
+#endif

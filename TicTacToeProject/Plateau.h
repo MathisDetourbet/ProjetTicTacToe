@@ -11,19 +11,23 @@
 
 #include <iostream>
 #include <vector>
-
-#endif /* defined(__TicTacToeProject__Plateau__) */
+#include "Pion.h"
 
 class Plateau {
     private:
     
     int lignes, colonnes;
     
-    std::vector < std::vector < int > > grid;
+    std::vector < std::vector < Pion > > grid; // Conteneur de Pion (Grille 2D)
     public:
     
     Plateau(int, int);
     ~Plateau();
-    void display();
+    void display(); // Affiche le plateau dans la console
+    int getLignes() const;  // Getter
+    int getColonnes() const;
+    void addPionAtIndex(Pion, int, int); // Ajout d'un pion sur le plateau
     
 };
+
+#endif 

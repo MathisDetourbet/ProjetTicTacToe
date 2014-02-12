@@ -11,10 +11,18 @@
 
 using namespace std;
 
-Pion::Pion(bool _type) {
-    type = _type;
+Pion::Pion(int _pionType) {
+    if (_pionType ==  0) {type = PionType::VIDE;}
+    
+    else if (_pionType == 1) {type = PionType::CROIX;}
+    
+    else {type = PionType::ROND;}
 }
 
 Pion::~Pion() {
     // Destructor
+}
+
+PionType Pion::getType() const{
+    return this->type;
 }
