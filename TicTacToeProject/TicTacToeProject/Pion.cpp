@@ -18,7 +18,7 @@ Pion::Pion(int _pionType) {
     
     else {type = PionType::ROND;}
 }
-
+    
 Pion::~Pion() {
     // Destructor
 }
