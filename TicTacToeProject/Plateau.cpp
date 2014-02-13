@@ -51,7 +51,7 @@ int Plateau::getColonnes() const {
 }
 
 void Plateau::addPionAtIndex(Pion *_pion, int _x, int _y) {
-    if (_x > this->lignes && _y > this->colonnes) {
+    if (_x < this->lignes && _y < this->colonnes) {
         this->grid[_x][_y] = *_pion;
     }
 }
