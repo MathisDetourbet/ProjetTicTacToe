@@ -26,7 +26,7 @@ class Plateau {
     void display(); // Affiche le plateau dans la console
     int getLignes() const;  // Getter
     int getColonnes() const;
-    void addPionAtIndex(Pion, int, int); // Ajout d'un pion sur le plateau
+    void addPionAtIndex(Pion *, int, int); // Ajout d'un pion sur le plateau
     
 };
 

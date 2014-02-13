@@ -40,9 +40,13 @@ int main(int argc, const char * argv[])
         cout << "Entrez la position de votre nouveau pion :" << endl;
         cin >> posX;
         cin >> posY;
+        
         if (aQuiLeTour) {
             Pion *pion = new Pion(2);
-            plateau->addPionAtIndex(*pion, posX, posY);
+            plateau->addPionAtIndex(pion, posX, posY);
+        }
+        else {
+            // C'est la machine qui joue
         }
         
         plateau->display();

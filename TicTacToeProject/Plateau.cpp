@@ -37,16 +37,6 @@ void Plateau::display() {
         cout << "|" << endl;
     }
 }
-/*
- void Plateau::display(int _lignes, int _colonnes) {
-    for (int unsigned i = 0; i < _lignes; i++) {
-        for (int unsigned j = 0; j < _colonnes + 1; j++) {
-            cout << "|" << this->grid[i][j].getType();
-        }
-        cout << "|" << endl;
-    }
-}
- */
 
 Plateau::~Plateau() {
     // Destructor
@@ -60,8 +50,8 @@ int Plateau::getColonnes() const {
     return this->colonnes;
 }
 
-void Plateau::addPionAtIndex(Pion _pion, int _x, int _y) {
+void Plateau::addPionAtIndex(Pion *_pion, int _x, int _y) {
     if (_x > this->lignes && _y > this->colonnes) {
-        this->grid[_x][_y] = _pion;
+        this->grid[_x][_y] = *_pion;
     }
 }
