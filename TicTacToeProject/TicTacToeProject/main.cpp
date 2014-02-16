@@ -15,7 +15,7 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    cout << "Projet d'aide a la decision : Jeu du Tic-tac-toe" << endl;
+    cout << "       *** Projet d'aide a la decision : Jeu du Tic-tac-toe ***" << endl << endl;
     
     int nbLines = 0, nbCol = 0; // Choix taille plateau (utilisateur)
     int lvlIA = 1;  // Choix niveau difficulté IA (utilisateur)
@@ -23,7 +23,7 @@ int main(int argc, const char * argv[])
     bool finPartie = false; // Var de fin de partie
     bool aQuiLeTour = true; // False -> tour machine
     
-    cout << "Taille du plateau de jeu : " << endl;
+    cout << "* Taille du plateau de jeu" << endl;
     cout << "Nombre de lignes : " << endl;
     cin >> nbLines;
     cout << "Nombre de colonnes : " << endl;
@@ -32,7 +32,7 @@ int main(int argc, const char * argv[])
     Plateau *plateau = new Plateau(nbLines, nbCol); // On instancie un plateau
     plateau->display();   // On affiche le plateau
     
-    cout << "Veuillez choisir le niveau de difficulté (1, 2, 3)" << endl;
+    cout << "* Niveau de difficulté (1, 2, 3)" << endl;
     cin >> lvlIA;
     
     do {
@@ -42,11 +42,12 @@ int main(int argc, const char * argv[])
         cin >> posY;
         
         if (aQuiLeTour) {
+            // Joueur humain joue
             Pion *pion = new Pion(2);
             plateau->addPionAtIndex(pion, posX, posY);
         }
         else {
-            // C'est la machine qui joue
+            // La machine joue
         }
         
         plateau->display();
